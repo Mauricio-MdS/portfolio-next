@@ -14,7 +14,7 @@ export const projectList: projectType[] = [
     description:
       "Explore my redesigned portfolio website powered by Next.js and Tailwind CSS. With Next.js static generation, the site offers blazing-fast performance and SEO-friendly features.",
     technologies: ["Next.JS", "Typescript", "Tailwind", "React"],
-    link: "https://github.com/Mauricio-MdS/",
+    link: "https://github.com/Mauricio-MdS/portfolio-next",
     linkText: "Source Code",
   },
   {

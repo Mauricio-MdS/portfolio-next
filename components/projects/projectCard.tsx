@@ -20,7 +20,7 @@ export default function ProjectCard({
   linkText,
 }: projectType) {
   return (
-    <Card className="w-[350px] m-4 flex flex-col">
+    <Card className="min-w-[320px] max-w-[350px] m-4 flex flex-col">
       <CardHeader>
         <CardTitle>{title}</CardTitle>
         {shortDescription && (

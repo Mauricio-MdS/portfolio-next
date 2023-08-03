@@ -8,7 +8,7 @@ export default function Projects() {
       <section className="container">
         <TypographyH2>Projects</TypographyH2>
       </section>
-      <div className="flex justify-center flex-wrap mt-4">
+      <div className="flex justify-center flex-wrap mt-4 sm:container">
         {projectList.map((project) => (
           <ProjectCard key={project.title} {...project} />
         ))}

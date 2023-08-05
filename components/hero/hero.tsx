@@ -1,4 +1,4 @@
-import { Button, buttonVariants } from "@/components/ui/button"
+import { buttonVariants } from "@/components/ui/button"
 import {
   TypographyA,
   TypographyH1,
@@ -6,12 +6,7 @@ import {
   TypographyLarge,
 } from "@/components/ui/typography"
 import { AiFillLinkedin } from "react-icons/ai"
-import {
-  VscGithubInverted,
-  VscGithub,
-  VscMailRead,
-  VscMail,
-} from "react-icons/vsc"
+import { VscGithub, VscMail } from "react-icons/vsc"
 
 export default function Hero() {
   return (

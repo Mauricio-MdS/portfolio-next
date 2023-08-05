@@ -1,5 +1,4 @@
-"use client"
-
+import Link from "next/link"
 import { Badge } from "../ui/badge"
 import {
   ClickableCard,
@@ -21,28 +20,26 @@ export default function ProjectCard({
   linkText,
 }: projectType) {
   return (
-    <ClickableCard
-      className="min-w-[320px] max-w-[350px] m-4 flex flex-col"
-      onClick={() => (window.location.href = link)}
-      title={linkText}
-    >
-      <CardHeader>
-        <CardTitle>{title}</CardTitle>
-        {shortDescription && (
-          <CardDescription>{shortDescription}.</CardDescription>
-        )}
-      </CardHeader>
-      <CardContent>
-        <TypographyP>{description}</TypographyP>
-      </CardContent>
-      <div className="flex-grow"></div>
-      <CardFooter className="flex flex-wrap justify-end">
-        {technologies.map((tech) => (
-          <Badge variant="secondary" className="ml-2 mt-1" key={tech}>
-            {tech}
-          </Badge>
-        ))}
-      </CardFooter>
-    </ClickableCard>
+    <Link href={link} className="flex" title={linkText}>
+      <ClickableCard className="min-w-[320px] max-w-[350px] m-4 flex flex-col">
+        <CardHeader>
+          <CardTitle>{title}</CardTitle>
+          {shortDescription && (
+            <CardDescription>{shortDescription}.</CardDescription>
+          )}
+        </CardHeader>
+        <CardContent>
+          <TypographyP>{description}</TypographyP>
+        </CardContent>
+        <div className="flex-grow"></div>
+        <CardFooter className="flex flex-wrap justify-end">
+          {technologies.map((tech) => (
+            <Badge variant="secondary" className="ml-2 mt-1" key={tech}>
+              {tech}
+            </Badge>
+          ))}
+        </CardFooter>
+      </ClickableCard>
+    </Link>
   )
 }

@@ -4,7 +4,7 @@ export type projectType = {
   description: string
   technologies: string[]
   link: string
-  linkText: "Source Code" | "Open app"
+  linkText: "Go to Code Repository" | "Open app"
 }
 
 export const projectList: projectType[] = [
@@ -15,7 +15,7 @@ export const projectList: projectType[] = [
       "Explore my redesigned portfolio website powered by Next.js and Tailwind CSS. With Next.js static generation, the site offers blazing-fast performance and SEO-friendly features.",
     technologies: ["Next.JS", "Typescript", "Tailwind", "React"],
     link: "https://github.com/Mauricio-MdS/portfolio-next",
-    linkText: "Source Code",
+    linkText: "Go to Code Repository",
   },
   {
     title: "Express CRUD API",
@@ -31,7 +31,7 @@ export const projectList: projectType[] = [
       "Bcrypt",
     ],
     link: "https://github.com/Mauricio-MdS/crud-api",
-    linkText: "Source Code",
+    linkText: "Go to Code Repository",
   },
   {
     title: "Message Board",
@@ -56,7 +56,7 @@ export const projectList: projectType[] = [
       "My previous portfolio site, crafted with React and MaterialUI. Although it has served me well, I have now transitioned to an improved version.",
     technologies: ["React", "Typescript", "MaterialUI"],
     link: "https://github.com/mauricio-mds",
-    linkText: "Source Code",
+    linkText: "Go to Code Repository",
   },
   {
     title: "Knight's Travails",
@@ -65,6 +65,6 @@ export const projectList: projectType[] = [
       "A Ruby CLI that outputs the quickest path a knight can take between two squares. Created as a challenge for The Odin Project.",
     technologies: ["Ruby"],
     link: "https://github.com/Mauricio-MdS/odin-knights-travails",
-    linkText: "Source Code",
+    linkText: "Go to Code Repository",
   },
 ]

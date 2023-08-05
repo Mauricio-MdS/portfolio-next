@@ -1,7 +1,8 @@
+"use client"
+
 import { Badge } from "../ui/badge"
-import { buttonVariants } from "../ui/button"
 import {
-  Card,
+  ClickableCard,
   CardContent,
   CardDescription,
   CardFooter,
@@ -20,7 +21,11 @@ export default function ProjectCard({
   linkText,
 }: projectType) {
   return (
-    <Card className="min-w-[320px] max-w-[350px] m-4 flex flex-col">
+    <ClickableCard
+      className="min-w-[320px] max-w-[350px] m-4 flex flex-col"
+      onClick={() => (window.location.href = link)}
+      title={linkText}
+    >
       <CardHeader>
         <CardTitle>{title}</CardTitle>
         {shortDescription && (
@@ -29,22 +34,15 @@ export default function ProjectCard({
       </CardHeader>
       <CardContent>
         <TypographyP>{description}</TypographyP>
-        <div className="mt-4">
-          {technologies.map((tech) => (
-            <Badge variant="secondary" key={tech}>
-              {tech}
-            </Badge>
-          ))}
-        </div>
       </CardContent>
       <div className="flex-grow"></div>
-      <CardFooter className="flex justify-center">
-        {
-          <a href={link} className={buttonVariants({ variant: "outline" })}>
-            {linkText}
-          </a>
-        }
+      <CardFooter className="flex flex-wrap">
+        {technologies.map((tech) => (
+          <Badge variant="secondary" key={tech}>
+            {tech}
+          </Badge>
+        ))}
       </CardFooter>
-    </Card>
+    </ClickableCard>
   )
 }

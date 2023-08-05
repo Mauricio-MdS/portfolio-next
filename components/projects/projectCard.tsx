@@ -36,9 +36,9 @@ export default function ProjectCard({
         <TypographyP>{description}</TypographyP>
       </CardContent>
       <div className="flex-grow"></div>
-      <CardFooter className="flex flex-wrap">
+      <CardFooter className="flex flex-wrap justify-end">
         {technologies.map((tech) => (
-          <Badge variant="secondary" key={tech}>
+          <Badge variant="secondary" className="ml-2 mt-1" key={tech}>
             {tech}
           </Badge>
         ))}

@@ -13,7 +13,14 @@ export const projectList: projectType[] = [
     shortDescription: "You are looking at it right now",
     description:
       "Explore my redesigned portfolio website powered by Next.js and Tailwind CSS. With Next.js static generation, the site offers blazing-fast performance and SEO-friendly features.",
-    technologies: ["Next.JS", "Typescript", "Tailwind", "React"],
+    technologies: [
+      "Next.JS",
+      "React",
+      "Typescript",
+      "Tailwind",
+      "Jest",
+      "React Testing Library",
+    ],
     link: "https://github.com/Mauricio-MdS/portfolio-next",
     linkText: "Go to Code Repository",
   },
